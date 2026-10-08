@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ese 12</title>
 </head>
-<body>
-     <h1 align="center">Form e Controlli</h1>
 
-    <form action="conferma.html">
+<body>
+    <h1 align="center">Form e Controlli</h1>
+
+    <form action="conferma.html" target="_blank">
 
         <!-- name serve per trasemttere i dati al server -->
         <!-- id serve esclusivamente per il collegamento con la label  -->
         <label for="txtNome">Nome: </label>
-        <input type="text" name="txtNome" id="txtNome"  required 
-               maxlength="15" placeholder="Inserisci qui il tuo nome">
+        <input type="text" name="txtNome" id="txtNome" required size="20" maxlength="15"
+            placeholder="Inserisci qui il tuo nome">
         <br>
 
         <label for="txtCognome">Cognome: </label>
-        <input type="text" name="txtCognome" id="txtCognome"  required 
-               maxlength="15" placeholder="Inserisci qui il tuo cognome">
+        <input type="text" name="txtCognome" id="txtCognome" required size="10" maxlength="15"
+            placeholder="Inserisci qui il tuo cognome">
         <br>
 
         <label for="txtPasword">Password: </label>
-        <input type="password" name="txtPasword" id="txtPasword"  required 
-               maxlength="15" placeholder="Inserisci qui la tua password">
+        <input type="password" name="txtPasword" id="txtPasword" required maxlength="15"
+            placeholder="Inserisci qui la tua password">
         <br>
 
         <!-- maxlength sui numeri non viene riconosciuto -->
         <label for="txtEta">Età: </label>
-        <input type="number" name="txtEta" id="txtEta" required
-               min="18" max="40" value="20">
+        <input type="number" name="txtEta" id="txtEta" required min="18" max="40" value="20">
         <br>
 
         <!-- su input type="file" non viene riconosciuto il placeholder-->
@@ -42,21 +43,21 @@
         <!-- Per trasmettere correttamente al server un gruppo di checkbox,
              i checkbox DEVONO avere tutti lo stesso name -->
         <fieldset>
-            <legend>Hobbies: </legend> 
+            <legend>Hobbies: </legend>
             <input type="checkbox" name="chkHobbies" id="chkCalcio" value="calcio">
             <label for="chkCalcio">Calcio</label>
             <br>
             <input type="checkbox" name="chkHobbies" id="chkModellismo" value="modellismo">
             <label for="chkModellismo">Modellismo</label>
             <br>
-            <input type="checkbox" name="chkHobbies" id="chkInformatica" value="informatica">   
+            <input type="checkbox" name="chkHobbies" id="chkInformatica" value="informatica">
             <label for="chkInformatica">Informatica</label>
         </fieldset>
         <br>
         <br>
 
         <!-- anche per i radio il name DEVE essere sempre lo stesso-->
-        <span>Settore di studio</span> 
+        <span>Settore di studio</span>
         <br>
         <input type="radio" name="optSettore" id="optInformatica" value="informatica">
         <label for="optInformatica">Informatica</label>
@@ -72,20 +73,28 @@
         <label for="txtCommenti">Commenti:</label>
         <br>
         <!-- per vedere il placeholder non deve esserci nulla tra il tag e il chiuso tag -->
-        <textarea placeholder="inserisci qui i tuoi commenti" 
-                  rows="5" cols="30" name="txtCommenti" id="txtCommenti">commento di prova</textarea>
+        <textarea placeholder="inserisci qui i tuoi commenti" rows="5" cols="30" name="txtCommenti"
+            id="txtCommenti">commento di prova</textarea>
+        <br>
+
+        <label for="lstProvince">Provincia</label>
+        <select id="lstProvince" name="lstProvince">
+            <!-- <option>(seleziona...)</option> -->
+            <option value="AL">Alessandria</option>
+            <option value="AT">Asti</option>
+            <option value="CN" selected>Cuneo</option>
+            <option value="NO">Novara</option>
+            <option value="TO">Torino</option>
+            <option disabled>- Altro -</option>
+        </select>
 
         <p>
             <!-- I parametri vengono trasmessi al server in formato url-encoded -->
             <input type="reset" value="Reset">
-            <input type="submit" value="Submit"
+            <input type="submit" value="Submit">
         </p>
-
-
-
-
+        
     </form>
-
-
 </body>
+
 </html>
