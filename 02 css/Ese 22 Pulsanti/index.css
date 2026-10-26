@@ -1,0 +1,50 @@
+div{
+    width:500px;
+    /* border:1px solid red; */
+}
+
+.pulsante{
+    display:block;
+    border:1px solid #777;
+    border-left-width:4px;
+    border-bottom-width:2px;
+
+    width:100px;
+    text-align:center;
+    font-weight:bold;
+    text-decoration: none;
+
+    padding:10px;
+    margin:6px;
+
+    color:#666; 
+    background-color: #DDD;
+}
+
+.pulsante:hover{
+    text-decoration: underline;
+    color:#DDD;
+    background-color:#666;
+    cursor:pointer;
+}
+
+.pulsante:focus{
+    text-decoration: none;
+    background-color:#00F;
+    color:#fff;
+}
+
+.primoPulsante{
+    margin-top:70px;
+}
+
+.pulsante:nth-of-type(4){
+    background-color:#fff;
+}
+
+.pulsante:nth-of-type(4):hover{
+    background-color:#666;
+}
+.pulsante:nth-of-type(4):focus{
+     background-color:#00F;
+}
