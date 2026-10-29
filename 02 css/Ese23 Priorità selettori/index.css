@@ -1,0 +1,82 @@
+#wrapper1 p {
+    padding: 12px;
+    margin: 15px;
+    border: 1px solid #ccc;
+    width: 200px;
+}
+
+/* specificità (1,1,1) */
+#wrapper1 p.paragrafo {
+    color: green;
+}
+
+/* specificità (1,1,1) */
+#wrapper1 p:nth-of-type(2) {
+    color: black;
+}
+
+/* specificità (1,0,1) */
+#wrapper1 p {
+    color: blue !important;
+}
+
+/* specificità (2,0,0) */
+#wrapper1 #id1 {
+    color: #f0f;
+}
+
+/* specificità (0,0,0) */
+* {
+    color: red;
+    margin: 10px;
+    padding: 0;
+}
+
+#wrapper2 {
+    width: 400px;
+    margin: 10px auto;
+    border: 1px solid #999;
+    background-color: #aaa;
+    color: black;
+}
+
+.header,
+.body {}
+
+#wrapper2>div {
+    width: 340px;
+    border: 1px solid red;
+    margin: 10px auto;
+    background-color: #ddd;
+    color: blue;
+}
+
+#wrapper2 .body>div {
+    background-color: white;
+    color: blue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#wrapper2 .body>div div,
+#wrapper2 .body p {
+    background-color: #aff;
+    color: #a00;
+    padding: 10px;
+    width: 35px;
+    display: inline-block;
+}
+
+#wrapper2 .header p {
+    background-color: #00f;
+    color: #fff;
+    padding: 10px;
+}
+
+#wrapper2 p:nth-of-type(2) {
+    background-color: white;
+}
+
+#wrapper2 .header p:last-of-type {
+    color: black;
+}
