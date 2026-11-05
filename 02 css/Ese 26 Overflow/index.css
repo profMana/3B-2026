@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: url("./bg.gif");
+    background-position: center;
+    background-repeat: repeat-y;
+    background-color: #e9e9e9;
+}
+
+#wrapper {
+    border: 1px solid #777;
+    width: 780px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px;
+}
+
+.container {
+    width: 400px;
+    height: 150px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px auto;
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+}
