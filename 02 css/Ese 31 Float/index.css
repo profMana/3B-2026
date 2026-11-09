@@ -7,8 +7,58 @@
 h1 {
     text-align: center;
     margin: 25px;
+    margin-top: 20px;
+    padding: 26px;
 }
 
 body {
     background-color: #bbb;
 }
+
+#wrapper{
+    max-width:720px;
+    border: 1px solid red;
+    margin:0 auto;
+    background-color: #fff;
+    font-size: 20pt;
+    text-align: center;
+    height:100vh;
+}
+
+header{
+    background-color: #ff0;
+}
+
+nav{
+    background-color: #0f0;
+}
+
+section{
+    margin: 15px;
+    border: 1px solid #f0f;
+    background-color: #f0f;
+
+    .title{
+        background-color: #ffa;
+    }
+    article{
+        background-color: #0ff;
+    }
+    aside{
+        background-color: #0a0;
+    }
+    *{
+        margin: 15px;
+    }
+}
+ footer{
+    background-color: #00f;
+    color:#fff;
+ }
+
+ header, nav, footer{
+    margin: 15px;
+    padding: 36px;
+ }
+
+ 
