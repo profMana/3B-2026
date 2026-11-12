@@ -15,50 +15,64 @@ body {
     background-color: #bbb;
 }
 
-#wrapper{
-    max-width:720px;
+#wrapper {
+    max-width: 720px;
     border: 1px solid red;
-    margin:0 auto;
+    margin: 0 auto;
     background-color: #fff;
     font-size: 20pt;
     text-align: center;
-    height:100vh;
+    /* height: 100vh;
+    overflow: auto; */
 }
 
-header{
+header {
     background-color: #ff0;
 }
 
-nav{
+nav {
     background-color: #0f0;
 }
 
-section{
+section {
     margin: 15px;
     border: 1px solid #f0f;
     background-color: #f0f;
+    overflow: auto;
 
-    .title{
+    .title {
         background-color: #ffa;
+        padding: 18px;
     }
-    article{
+
+    article {
         background-color: #0ff;
+        height: 150px;
+        width: 60%;
+        float: right;
     }
-    aside{
+
+    aside {
         background-color: #0a0;
+        height: 500px;
+        width: 30%;
+        float: left;
+        /* margin-top: 0; */
     }
-    *{
+
+    * {
         margin: 15px;
     }
 }
- footer{
-    background-color: #00f;
-    color:#fff;
- }
 
- header, nav, footer{
+footer {
+    background-color: #00f;
+    color: #fff;
+}
+
+header,
+nav,
+footer {
     margin: 15px;
     padding: 36px;
- }
-
- 
+}
