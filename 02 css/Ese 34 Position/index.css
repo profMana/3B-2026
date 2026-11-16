@@ -10,8 +10,62 @@ h1 {
 }
 
 #wrapper {
-    width: 300px;
-    height: 200px;
+    width: 400px;
+    height: 300px;
     margin: 20px auto;
     overflow: hidden;
+    border:1px solid #ddd;
+    position:relative;
+
+   .box{
+        width:140px;
+        height:140px;
+        border:1px solid #777;
+        font-weight: bold;
+        font-size:24pt;
+        text-align:center;
+        line-height:140px;
+        background-color: #ffA;
+   }
+
+   .box{
+        position:relative;
+   }
+
+   .box:nth-of-type(1){
+        top:20px;
+        left:20px;
+        z-index:-1;
+   }
+
+    .box:nth-of-type(3){
+        right:20px;
+        bottom:20px;
+        z-index:-1;
+   }
+
+    .box:nth-of-type(2){
+        top:150px;
+        left:200px;
+        margin-left:-70px;
+        margin-top:-70px;
+        z-index:1;
+   }
+   .box{
+       position:absolute;
+   }
+
+   p{
+    background-color:rgba(200, 200, 200, 0.5)
+    /* opacity:0.5; */
+   }
+
+   .box:nth-of-type(1){
+        position:fixed;
+        top:60px;
+        right:60px;
+        left:auto;
+   }
+
+
 }
